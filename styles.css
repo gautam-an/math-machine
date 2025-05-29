@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    padding: 1rem;
+    margin-top: 3.2rem;
+}
+
+.math-problem {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#equation {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 60%;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    border: 2px solid #000;
+    border-radius: 0;
+    font-size: 1.1rem;
+    text-align: center;
+    background: #fff;
+    color: #222;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="number"]:focus {
+    border-color: #000;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.feedback {
+    margin-top: 1rem;
+    min-height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.feedback.error {
+    color: #ff0000;
+}
+
+.streak-stats {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    background: rgba(255,255,255,0.95);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.streak-stats span {
+    font-size: 1rem;
+}
+
+.stats {
+    display: none;
+}
+
+.range-selector {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: rgba(255,255,255,0.95);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.range-selector label {
+    font-size: 0.95rem;
+    margin-right: 0.25rem;
+}
+
+.range-selector select {
+    margin-right: 0.75rem;
+}
+
+select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+    background: white;
+}
+
+#timer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 200;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0.7rem 0;
+    box-shadow: none;
+} 

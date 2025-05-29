@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>math machine</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="timer" style="text-align:center;font-size:1.3rem;margin-top:1.2rem;margin-bottom:1.2rem;">0:00</div>
+  <div class="container">
+    <div class="math-problem">
+      <div id="equation"></div>
+      <input type="number" id="answer" />
+      <p id="feedback" class="feedback"></p>
+    </div>
+
+    <div class="range-selector">
+      <label for="number-range-1">First Number:</label>
+      <select id="number-range-1">
+        <option data-min="1" data-max="100">1–100</option>
+        <option data-min="100" data-max="500">100–500</option>
+        <option data-min="500" data-max="5000">500–5,000</option>
+        <option data-min="5000" data-max="10000">5,000–10,000</option>
+      </select>
+
+      <label for="number-range-2">Second Number:</label>
+      <select id="number-range-2">
+        <option data-min="1" data-max="100">1–100</option>
+        <option data-min="100" data-max="500">100–500</option>
+        <option data-min="500" data-max="5000">500–5,000</option>
+        <option data-min="5000" data-max="10000">5,000–10,000</option>
+      </select>
+    </div>
+  </div>
+  <div class="streak-stats">
+    <span>current streak: <span id="current-streak">0</span></span>
+    <span>highest streak: <span id="highest-streak">0</span></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
